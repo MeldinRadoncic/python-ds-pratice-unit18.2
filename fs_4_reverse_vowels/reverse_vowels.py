@@ -19,8 +19,7 @@ def reverse_vowels(s):
     reverse_vowels("why try, shy fly?")
     'why try, shy fly?''
     """
-
-        vowels = set("aeiou")
+    vowels = set("aeiou")
 
     string = list(s)
     i = 0

@@ -11,13 +11,17 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
-         counts = {}
+    counts = {}
 
     for num in nums:
         counts[num] = counts.get(num, 0) + 1
 
+    # find the highest value (the most frequent number)
+
     max_value = max(counts.values())
 
-    for, freq) (num in counts.items():
+    # now we need to see at which index the highest value is at
+
+    for (num, freq) in counts.items():
         if freq == max_value:
             return num
